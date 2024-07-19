@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars for Sale</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+   
+        body {
+            background-image: url('https://media.istockphoto.com/id/1966454776/photo/liquid-wave-in-studio.webp?b=1&s=170667a&w=0&k=20&c=StHMInIMQq7p_qTNwVcSiWk6xXzHs8SD47VfBkDmqH4=');
+    }
+</style>
+</head>
+
+<body class="bg-gray-100">
+    <body class="bg-gray-100 p-4">
+        <div class="flex space-x-4">
+            <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out">Home</a>
+            <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out">About Us</a>
+            <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out">Services</a>
+            <a href="#" class="text-yellow-500 hover:text-yellow-600 transition duration-300 ease-in-out">Contact</a>
+        </div>
+  
+    
+        <h1 class="text-red-600 text-xl font-bold text-center">Cars for Sale</h1>
+        <div id="carContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cars will be dynamically added here -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-md p-4 mx-2 relative"
+                data-id="1">
+                <h2 class="text-xl font-semibold mb-2">Car A</h2>
+                <img src="muy.jpg" alt="Car A" class="w-32 h-32 object-cover rounded-lg shadow-md">
+                <div class="car-info">
+                    <p class="text-gray-700">Description: Sedan, 4-door</p>
+                    <p class="font-bold text-gray-900 mt-2">$25,000</p>
+                    <button
+                        class="btn-add-to-cart bg-green-500 hover:bg-green-600 text-white py-2 px-4 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-300 rounded-lg shadow-md p-4 mx-2 relative"
+                data-id="2">
+                <h2 class="text-xl font-semibold mb-2">Car B</h2>
+                <img src="car-b.jpg" alt="Car B" class="mb-4 rounded-lg">
+                <div class="car-info">
+                    <p class="text-gray-700">Description: SUV, 5-seater</p>
+                    <p class="font-bold text-gray-900 mt-2">$30,000</p>
+                    <button
+                        class="btn-add-to-cart bg-green-500 hover:bg-green-600 text-white py-2 px-4 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-300 rounded-lg shadow-md p-4 mx-2 relative"
+                data-id="3">
+                <h2 class="text-xl font-semibold mb-2">Car C</h2>
+                <img src="car-c.jpg" alt="Car C" class="mb-4 rounded-lg">
+                <div class="car-info">
+                    <p class="text-gray-700">Description: Hatchback, 2-door</p>
+                    <p class="font-bold text-gray-900 mt-2">$20,000</p>
+                    <button
+                        class="btn-add-to-cart bg-green-500 hover:bg-green-600 text-white py-2 px-4 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-300 rounded-lg shadow-md p-4 mx-2 relative"
+                data-id="4">
+                <h2 class="text-xl font-semibold mb-2">Car D</h2>
+                <img src="car-d.jpg" alt="Car D" class="mb-4 rounded-lg">
+                <div class="car-info">
+                    <p class="text-gray-700">Description: Electric, 4-door</p>
+                    <p class="font-bold text-gray-900 mt-2">$35,000</p>
+                    <button
+                        class="btn-add-to-cart bg-green-500 hover:bg-green-600 text-white py-2 px-4 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">Add
+                        to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="cartContainer" class="mt-8 p-4 bg-white rounded-lg shadow-md hidden">
+            <h2 class="text-xl font-semibold mb-4">Shopping Cart</h2>
+            <ul id="cartList" class="divide-y divide-gray-200">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div id="cartSummary" class="mt-4">
+                <p class="text-xl font-semibold">Total: $<span id="cartTotal">0.00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+

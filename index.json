@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Car A",
+        "description": "Sedan, 4-door",
+        "price": 25000,
+        "image": "car-a.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Car B",
+        "description": "SUV, 5-seater",
+        "price": 30000,
+        "image": "car-b.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Car C",
+        "description": "Hatchback, 2-door",
+        "price": 20000,
+        "image": "car-c.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Car D",
+        "description": "Electric, 4-door",
+        "price": 35000,
+        "image": "car-d.jpg"
+    }
+]
