@@ -1,4 +1,35 @@
-// script.js
+
+const tronElement = document.getElementById('tron');
+
+// Add a click event listener
+tronElement.addEventListener('click', function() {
+  tronElement.textContent="Learn About Us";
+  // Add any other actions you want to perform on click
+});
+
+const mtonElement = document.getElementById('mton');
+
+// Add a click event listener
+mtonElement.addEventListener('click', function() {
+  mtonElement.textContent="Visit us Here";
+  // Add any other actions you want to perform on click
+});
+const zonElement = document.getElementById('zon');
+
+// Add a mouseover event listener
+zonElement.addEventListener('mouseover', function() {
+  zonElement.style.backgroundColor = '#f0f0f0'; // Change background color on mouseover
+});
+
+// Add a mouseout event listener (optional)
+zonElement.addEventListener('mouseout', function() {
+  zonElement.style.backgroundColor = 'hotpink'; // Restore original background color on mouseout
+});
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Global variables to track cart items and total price
